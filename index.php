@@ -11,5 +11,5 @@ $router = new Router(new Request);
 
 // Register endpoint
 $router->get('/', function () {
-    include('pages/login.php');
+    isset($_SESSION['user']) ? include('pages/movies.php') : include('pages/login.php');
 });
