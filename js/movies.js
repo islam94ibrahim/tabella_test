@@ -12,7 +12,7 @@ $(function () {
       if (window.innerWidth <= 767) {
         movies.find('.movie').each((index, movie) => {
           movie = $(movie);
-          movie.data('year') < 2000 && movie.css('display', 'none');
+          movie.data('year') <= 2000 && movie.css('display', 'none');
         })
       } else {
         movies.find('.movie').each((index, movie) => {

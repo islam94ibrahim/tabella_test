@@ -10,7 +10,15 @@
 <main class="container">
   <section class="header">
     <div class="title">
-      Welcome
+        <?php
+        if ($GLOBALS['country'] === 'FR'):
+            echo "Bienvenu";
+        elseif ($GLOBALS['country'] == 'DE'):
+            echo "Willkommen";
+        else:
+            echo "Welcome";
+        endif;
+        ?>
     </div>
     Please log-in to continue:
   </section>
