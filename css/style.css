@@ -1,0 +1,35 @@
+@import "login.css";
+
+.container {
+    position: relative;
+    width: 1024px;
+    margin: 4rem auto 0;
+    font-family: Georgia, Times, serif;
+}
+
+.header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.logout {
+    position: absolute;
+    right: 0;
+    background-color: Crimson;
+    border-radius: 5px;
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+}

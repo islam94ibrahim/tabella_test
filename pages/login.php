@@ -8,6 +8,30 @@
 </head>
 <body>
 <main class="container">
+  <section class="header">
+    <div class="title">
+      Welcome
+    </div>
+    Please log-in to continue:
+  </section>
+  <section class="loginForm">
+    <form method="POST" action="../server/login.php">
+      <div class="error"></div>
+      <div class="form-input">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+      </div>
+      <div class="form-input">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+      </div>
+      <div class="form-submit">
+        <input type="submit" value="Submit"/>
+      </div>
+    </form>
+  </section>
 </main>
+<script type="text/javascript" src="/js/jquery-3.5.0.min.js"></script>
+<script type="text/javascript" src="/js/login.js"></script>
 </body>
 </html>
